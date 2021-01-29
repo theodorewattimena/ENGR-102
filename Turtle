@@ -1,0 +1,31 @@
+# By submitting this assignment, I agree to the following:
+#  “Aggies do not lie, cheat, or steal, or tolerate those who do”
+#  “I have not given or received any unauthorized aid on this assignment”
+#
+# Name: 		THEODORE FREDERIK WATTIMENA
+# Section:		554
+# Assignment:	Lab 12B
+# Date:		17/11/2019
+import turtle
+import math
+ 
+tallymarks = turtle.Turtle()
+number = int(input("Enter a number: "))
+def tally():
+    '''Draw the tally corresponding to the input of the user'''
+    tallymarks.right(90)
+    x = 0
+    for i in range(1,number+1):
+        if(i%5 == 0):
+            tallymarks.right(135)
+            tallymarks.forward(30*math.sqrt(2))
+            tallymarks.right(225)
+        else: 
+            tallymarks.penup()
+            tallymarks.goto(x*10,0)
+            tallymarks.pendown()
+            tallymarks.forward(30)
+        x = x + 1
+tally()
+help(tally)
+turtle.done()
