@@ -1,0 +1,57 @@
+print('Dimension of Vector')
+dimension = int(input('Insert Dimension of Vector:'))
+lista = []
+listb = []
+for i in range (dimension):
+    lista1 = float(input('Insert Value of Vector A:'))
+    lista.append(lista1)
+    listb1 = float(input('Insert value of Vector B:'))
+    listb.append(listb1)
+print(lista)
+print(listb)
+
+#Finding the magnitude of A
+i=0
+fm = []
+for i in range (len(lista)):
+    for i in lista:
+        fm = [i**2]
+        magafinal = sum(fm)
+print('The magnitude of Vector A is',magafinal)
+
+#Finding magnitude of B
+i = 0
+mb = []
+for i in range (len(listb)):
+    for i in listb:
+        mb = [i**2]
+        magbfinal = sum(mb)
+print('The magnitude of Vector B is',magbfinal)
+
+#Finding Vector A + Vector B
+i = 0
+while i in range(dimension):
+    for i in (lista):
+        sumlista = sum(lista)
+    for i in (listb):
+        sumlistb = sum(listb)
+    totalsum = sumlista + sumlistb
+print('Vector A + Vector B is',totalsum)
+
+#Finding Vector A - Vector B
+i = 0
+while i in range (dimension):
+    for i in (lista):
+        sumlista = sum(lista)
+    for i in (listb):
+        sumlistb = sum(listb)
+    vectorba = sumlista - sumlistb
+print('Vector A - Vector B is', vectorba)
+
+#Finding Dot Product of Vector A and B
+i = 0
+ab = []
+for i in range(0, len(lista)):
+     ab.append(lista[i]*listb[i])
+     final = sum(ab)
+print('The dot product is',final)
